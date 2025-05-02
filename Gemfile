@@ -59,7 +59,7 @@ group :development, :test do
   gem 'brakeman'
   gem 'rubocop-rails_config'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
   gem 'factory_bot_rails'
   gem 'rails-pg-extras'
   gem 'database_cleaner-active_record'
