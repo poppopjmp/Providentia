@@ -47,7 +47,7 @@ gem 'omniauth-rails_csrf_protection'
 gem 'pundit'
 
 # frontend
-gem 'propshaft'
+gem 'propshaft', '>= 1.2.0'
 gem 'vite_rails', '~> 3.0'
 
 # monitoring
