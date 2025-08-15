@@ -10,7 +10,7 @@ gem 'rgl'
 gem 'pg'
 gem 'puma'
 gem 'nilify_blanks', '~> 1.4'
-gem 'rails', '~> 7.1.3'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 gem 'oj', '~> 3.10'
 gem 'pry-rails', '~> 0.3.9'
 gem 'rails-patterns'
@@ -27,11 +27,11 @@ gem 'nokogiri', '~> 1.16'
 gem 'stringex', '~> 2.8', require: 'stringex_lite'
 
 # functionality
-gem 'acts-as-taggable-on', '~> 10.0'
+gem 'acts-as-taggable-on', '~> 11.0', '>= 11.0.0'
 gem 'ipaddress', github: 'ipaddress-gem/ipaddress'
 gem 'simple_form', '~> 5.0'
 gem 'ancestry'
-gem 'paper_trail'
+gem 'paper_trail', '>= 15.2.0'
 gem 'kaminari'
 gem 'naturally', '~> 2.2'
 
@@ -61,8 +61,8 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails'
   gem 'factory_bot_rails'
-  gem 'rails-pg-extras'
-  gem 'database_cleaner-active_record'
+  gem 'rails-pg-extras', '>= 5.4.0'
+  gem 'database_cleaner-active_record', '>= 2.2.0'
   gem 'faker', '~> 3.3'
 end
 
