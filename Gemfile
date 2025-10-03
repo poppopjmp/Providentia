@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # core
 gem 'bootsnap', '>= 1.4.2', require: false
-gem 'haml-rails', '~> 2.0'
+gem 'haml-rails', '~> 3.0', '>= 3.0.0'
 gem 'rgl'
 gem 'pg'
 gem 'puma'
@@ -57,7 +57,7 @@ gem 'sentry-rails'
 group :development, :test do
   gem 'bundler-audit', '~> 0.9.1'
   gem 'brakeman'
-  gem 'rubocop-rails_config'
+  gem 'rubocop-rails_config', '>= 1.17.0'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails'
   gem 'factory_bot_rails'
