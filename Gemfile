@@ -42,7 +42,7 @@ gem 'rouge'
 # auth
 gem 'devise'
 gem 'omniauth', '~> 2.0'
-gem 'omniauth_openid_connect'
+gem 'omniauth_openid_connect', '>= 0.8.0'
 gem 'omniauth-rails_csrf_protection'
 gem 'pundit'
 
