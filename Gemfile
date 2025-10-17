@@ -5,12 +5,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # core
 gem 'bootsnap', '>= 1.4.2', require: false
-gem 'haml-rails', '~> 2.0'
+gem 'haml-rails', '~> 3.0', '>= 3.0.0'
 gem 'rgl'
 gem 'pg'
 gem 'puma'
 gem 'nilify_blanks', '~> 1.4'
-gem 'rails', '~> 7.1.3'
+gem 'rails', '~> 7.1.3', '>= 7.1.3.3'
 gem 'oj', '~> 3.10'
 gem 'pry-rails', '~> 0.3.9'
 gem 'rails-patterns'
@@ -18,7 +18,7 @@ gem 'friendly_id', '~> 5.5.0'
 gem 'view_component'
 gem 'jwt'
 gem 'http', '~> 5.0'
-gem 'turbo-rails', '~> 2.0'
+gem 'turbo-rails', '~> 2.0', '>= 2.0.6'
 gem 'liquid', '~> 5.5'
 gem 'redis'
 gem 'hiredis', '~> 0.6.3'
@@ -29,9 +29,9 @@ gem 'stringex', '~> 2.8', require: 'stringex_lite'
 # functionality
 gem 'acts-as-taggable-on', '~> 10.0'
 gem 'ipaddress', github: 'ipaddress-gem/ipaddress'
-gem 'simple_form', '~> 5.0'
+gem 'simple_form', '~> 5.3', '>= 5.3.1'
 gem 'ancestry'
-gem 'paper_trail'
+gem 'paper_trail', '>= 15.2.0'
 gem 'kaminari'
 gem 'naturally', '~> 2.2'
 
@@ -41,27 +41,27 @@ gem 'rouge'
 
 # auth
 gem 'devise'
-gem 'omniauth', '~> 2.0'
-gem 'omniauth_openid_connect'
-gem 'omniauth-rails_csrf_protection'
+gem 'omniauth', '~> 2.1', '>= 2.1.3'
+gem 'omniauth_openid_connect', '>= 0.8.0'
+gem 'omniauth-rails_csrf_protection', '>= 1.0.2'
 gem 'pundit'
 
 # frontend
-gem 'propshaft'
-gem 'vite_rails', '~> 3.0'
+gem 'propshaft', '>= 0.9.0'
+gem 'vite_rails', '~> 3.0', '>= 3.0.18'
 
 # monitoring
 gem 'sentry-ruby'
-gem 'sentry-rails'
+gem 'sentry-rails', '>= 5.17.2'
 
 group :development, :test do
   gem 'bundler-audit', '~> 0.9.1'
   gem 'brakeman'
-  gem 'rubocop-rails_config'
+  gem 'rubocop-rails_config', '>= 1.17.0'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'rspec-rails'
-  gem 'factory_bot_rails'
-  gem 'rails-pg-extras'
+  gem 'rspec-rails', '>= 6.1.3'
+  gem 'factory_bot_rails', '>= 6.4.4'
+  gem 'rails-pg-extras', '>= 5.4.0'
   gem 'database_cleaner-active_record'
   gem 'faker', '~> 3.3'
 end
@@ -70,7 +70,7 @@ group :development do
   gem 'listen'
   gem 'web-console', '>= 3.3.0'
   gem 'bullet'
-  gem 'rack-mini-profiler'
+  gem 'rack-mini-profiler', '>= 4.0.0'
   # For memory profiling
   gem 'memory_profiler'
 
