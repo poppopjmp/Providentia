@@ -22,7 +22,7 @@ gem 'turbo-rails', '~> 2.0'
 gem 'liquid', '~> 5.5'
 gem 'redis'
 gem 'hiredis', '~> 0.6.3'
-gem 'mail', '~> 2.8'
+gem 'mail', '~> 2.9', '>= 2.9.0'
 gem 'nokogiri', '~> 1.16'
 gem 'stringex', '~> 2.8', require: 'stringex_lite'
 
